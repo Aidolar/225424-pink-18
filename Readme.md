@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Красовский](https://up.htmlacademy.ru/adaptive/18/user/225424).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://up.htmlacademy.ru/adaptive/18/user/170516).
 
 ---
 
