@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк - взгляните на жизнь иначе!</title>
+  </head>
+
+  <body>
+
+    <header class="page-header"> <!-- будет position: absolute к верху страницы и иметь полупрозрачный фон -->
+
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Pink"> <!-- заменить на svg -->
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle-button" type="button">Открыть или закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section class="opening">
+
+        <h1 class="opening__header">Фотографии пользователей</h1>
+
+      </section>
+
+      <section class="user-photos">
+
+        <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
+
+        <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+        <div class="user-photos__gallery">
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo photo-block__user-photo--photo-of-the-day" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Анна</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-10 11:55">(5 минут назад)</time>
+            <blockquote class="photo-block__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote> <!-- вспомнить как скрыть контент который вылезает за максимальную высоту блока -->
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 215</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Левон</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-10 07:00">(5 часов назад)</time>
+            <blockquote class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 356</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Антон</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-10 00:00">(12 часов назад)</time>
+            <blockquote class="photo-block__comment">Соседи будут рады!</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 666</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Борис</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-09 16:00">(20 часов назад)</time>
+            <blockquote class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 215</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Сергей</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-09 11:00">(25 часов назад)</time>
+            <blockquote class="photo-block__comment">Самая кубанская в мире!</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 4</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Максим</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-08 20:00">(40 часов назад)</time>
+            <blockquote class="photo-block__comment">Где снег-то?</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 150</p>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
+            <cite class="photo-block__author-name">Надежда</cite>
+            <time class="photo-block__publication-time" datetime="2019-11-08 15:00">(45 часов назад)</time>
+            <blockquote class="photo-block__comment">Всем GM и взаимные лайки!</blockquote>
+            <div class="photo-block__like-section">
+              <button class="photo-block__like-button" type="button">Поставить лайк</button>
+              <p class="photo-block__like-count">Нравится: 2560</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-your-photo">
+        <h2 class="visually-hidden">Запостите свою фотографию!</h2>
+      </section>
+    </main>
+
+      <footer class="page-footer">
+        <a class="page-footer__glasses-logo glasses-logo" href="index.html">
+          <img class="glasses-logo__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Pink"> <!-- заменить на svg -->
+        </a>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютюбе</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </footer>
+  </body>
+</html>
