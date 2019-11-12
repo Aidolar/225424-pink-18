@@ -8,7 +8,7 @@
       #pink-map {
         height: 320px;
         width: 220px;
-       }
+        }
     </style> <!-- временно -->
   </head>
 
@@ -21,7 +21,7 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle-button" type="button">Открыть или закрыть меню</button>
+        <button class="burger-button" type="button">Открыть или закрыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -93,13 +93,13 @@
       </section>
 
       <section class="reviews">
-        <h2>Отзывы о приложении</h2>
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__wrapper slider">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <blockquote class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
@@ -117,15 +117,15 @@
         <div class="page-footer__contacts contacts">
           <p class="contacts__appeal">Остались вопросы? Свяжитесь с нами!</p>
           <p class="contacts__text">
-            <b class="contacts__bold-text">Звоните:</b><br>
+            <b class="contacts__bold-text">Звоните:</b>
             <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </p>
           <p class="contacts__text">
-            <b class="contacts__bold-text">Пишите:</b><br>
+            <b class="contacts__bold-text">Пишите:</b>
             <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="contacts__text">
-            <b class="contacts__bold-text">Приезжайте в гости:</b><br>
+            <b class="contacts__bold-text">Приезжайте в гости:</b>
             <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
           </p>
         </div>
@@ -137,23 +137,8 @@
 
     </main>
 
-    <script>
-// Initialize and add the map
-      function initMap() {
-// The location of Pink
-      var pink = {lat: 59.936241, lng: 30.321356};
-// The map, centered at Pink
-      var map = new google.maps.Map(
-      document.getElementById('pink-map'), {zoom: 17, center: pink});
-// The marker, positioned at Pink
-      var marker = new google.maps.Marker({position: pink, map: map, icon: 'pin.png'});
-}
-// pin.png потом будет в другой папке, и не png, а svg :-) Не забыть подстроить под ширину вьюпорта
-    </script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsUm4Lg8iGYQjd6LPIGnshcbR437WFkHc&callback=initMap">
-    </script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsUm4Lg8iGYQjd6LPIGnshcbR437WFkHc&callback=initMap"></script>
 
 <!-- ключ AIzaSyAsUm4Lg8iGYQjd6LPIGnshcbR437WFkHc -->
 
