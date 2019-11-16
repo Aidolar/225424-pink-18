@@ -41,6 +41,112 @@
 
       </section>
 
+      <section class="form-block">
+        <h2 class="visually-hidden">Форма для заполнения данных для участия в конкурсе</h2>
+        <form class="form-block__form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="form-block__contest-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <ul class="form-block__full-name-list">
+            <li class="form-block__full-name-item">
+              <label>
+                <span class="form-block__description">Фамилия:</span>
+                <input class="form-block__text-input text-input" type="text" name="surname" value="" placeholder="Укажите фамилию *" required>
+              </label>
+            </li>
+            <li class="form-block__full-name-item">
+              <label>
+                <span class="form-block__description">Имя:</span>
+                <input class="form-block__text-input text-input" type="text" name="name" value="" placeholder="Введите ваше имя *" required>
+              </label>
+            </li>
+            <li class="form-block__full-name-item">
+              <label>
+                <span class="form-block__description">Отчество:</span>
+                <input class="form-block__text-input text-input" type="text" name="patronym" value="" placeholder="Ну и отчество тоже">
+              </label>
+            </li>
+          </ul>
+
+          <div class="form-block__achievments">
+            <fieldset class="form-block__fieldset">
+              <legend class="form-block__legend">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form-block__achievments-list">
+                <li class="form-block__achievments-item">
+                  <input id="shark-selfie" class="visually-hidden form-block__checkbox checkbox-input" type="checkbox" name="shark-selfie" checked>
+                  <label class="form-block__label form-block__label--checkbox" for="shark-selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="form-block__achievments-item">
+                  <input id="beach" class="visually-hidden  form-block__checkbox checkbox-input" type="checkbox" name="beach" checked>
+                  <label class="form-block__label form-block__label--checkbox" for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="form-block__achievments-item">
+                  <input id="chuck" class="visually-hidden  form-block__checkbox checkbox-input" type="checkbox" name="chuck">
+                  <label class="form-block__label form-block__label--checkbox" for="chuck">Видел Чака Норриса</label>
+                </li>
+                <li class="form-block__achievments-item">
+                  <input id="souvenirs" class="visually-hidden  form-block__checkbox checkbox-input" type="checkbox" name="souvenirs">
+                  <label class="form-block__label form-block__label--checkbox" for="souvenirs">Накупил сувениров</label>
+                </li>
+                <li class="form-block__achievments-item">
+                  <input id="tower" class="visually-hidden  form-block__checkbox checkbox-input" type="checkbox" name="tower" checked>
+                  <label class="form-block__label form-block__label--checkbox" for="tower">Удержал башню</label>
+                </li>
+                <li class="form-block__achievments-item">
+                  <input id="hotel" class="visually-hidden " type="checkbox" name="hotel">
+                  <label class="form-block__label form-block__label--checkbox" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="form-block__contacts">
+            <ul class="form-block__contacts-list">
+              <li class="form-block__contacts-item">
+                <label>
+                  <span class="form-block__description">Номер телефона</span>
+                  <input class="form-block__text-input text-input" type="tel" name="telephone-number" value="" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+              <li class="form-block__contacts-item">
+                <label>
+                  <span class="form-block__description">Адрес почты</span>
+                  <input class="form-block__text-input text-input" type="email" name="email" value="" placeholder="Введите почту" required>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-block__os-names">
+            <fieldset class="form-block__fieldset">
+              <legend class="form-block__legend">С каким приложением путешествовали?</legend>
+              <ul class="form-block__os-list">
+                <li class="form-block__os-item">
+                  <input id="ios" class="visually-hidden " type="radio" name="ios" checked>
+                  <label class="" for="ios">Pink для iOS</label>
+                </li>
+                <li class="form-block__os-item">
+                  <input id="android" class="visually-hidden form-block__radio radio-input" type="radio" name="android">
+                  <label class="form-block__label form-block__label--radio" for="android">Pink на Android</label>
+                </li><li class="form-block__os-item">
+                  <input id="windows-phone" class="visually-hidden form-block__radio radio-input" type="radio" name="windows-phone">
+                  <label class="form-block__label form-block__label--radio" for="windows-phone">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="form-block__emotions">
+            <fieldset class="form-block__fieldset">
+              <legend class="form-block__legend">Опишите свои эмоции</legend>
+              <textarea id="emotions" class="" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="8" cols="80"></textarea>
+            </fieldset>
+          </div>
+
+          <button class="form-block__submit-button" type="submit" name="submit-button">Отправить форму</button>
+          <p class="form-block__note"><span class="form-block__red-star">*</span> &mdash; обязательные поля</p>
+
+        </form>
+      </section>
+
     </main>
 
       <footer class="page-footer">

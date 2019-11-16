@@ -131,6 +131,34 @@
 
       <section class="post-photo">
         <h2 class="visually-hidden">Запостите свою фотографию!</h2>
+        <p class="post-photo__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне</p>
+        <div class="post-photo__editing-block">
+          <a class="post-photo__full-photo-link" href="#"><img class="post-photo__edited-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография для редактирования"></a>
+          <p class="post-photo__mode-toggles">
+            <button class="post-photo__toggle post-photo__toggle--crop" type="button">Обрезка фото</button>
+            <button class="post-photo__toggle post-photo__toggle--fill" type="button">Заливка</button>
+            <button class="post-photo__toggle post-photo__toggle--contrast" type="button">Контраст</button>
+          </p>
+          <div class="post-photo__slider editing-slider">
+            <div class="editing-slider__scale">
+              <div class="editing-slider__pin"></div>
+            </div>
+          </div>
+          <div class="post-photo__slider post-photo__slider--hidden editing-slider">
+            <div class="editing-slider__scale">
+              <div class="editing-slider__pin"></div>
+            </div>
+          </div>
+          <div class="post-photo__slider post-photo__slider--hidden editing-slider">
+            <div class="editing-slider__scale">
+              <div class="editing-slider__pin"></div>
+            </div>
+          </div>
+        </div>
+        <div class="post-photo__buttons-block">
+          <button class="post-photo__button post-photo__button--post" type="button">Запостить</button>
+          <button class="post-photo__button post-photo__button--cancel" type="button">Отмена</button>
+        </div>
       </section>
     </main>
 
