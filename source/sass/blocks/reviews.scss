@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+.reviews {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.reviews__author-name {
+  display: block;
+  padding-top: 34px;
+  color: $black-text;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  font-style: normal;
+
+  text-align: center;
+}
+
+.reviews__review-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  color: $navy-text;
+
+  font-size: 14px;
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__toggle:not(:last-child) {
+  margin-right: 19px;
+}

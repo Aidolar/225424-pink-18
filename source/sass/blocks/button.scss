@@ -1,0 +1,93 @@
+@import "variables.scss";
+
+.button {
+  display: block;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 280px;
+
+  border: 3px solid;
+  border-radius: 55px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  text-align: center;
+
+  &--download {
+    background-color: $button-bg-color-download;
+    border-color: $button-border-color-download;
+    color: $button-text-color-download;
+  }
+
+  &--download:hover {
+    background-color: $button-bg-color-download-hover;
+    border-color: $button-border-color-download-hover;
+    color: $button-text-color-download-hover;
+  }
+
+  &--download:focus {
+    background-color: $button-bg-color-download-hover;
+    border-color: $button-border-color-download-hover;
+    color: $button-text-color-download-hover;
+  }
+
+  &--download:active {
+    background-color: $button-bg-color-download-active;
+    border-color: $button-border-color-download-active;
+    color: $button-text-color-download-active;
+  }
+
+  &--post {
+    background-color: $button-bg-color-post;
+    border-color: $button-border-color-post;
+    color: $button-text-color-post;
+  }
+
+  &--post:hover {
+    background-color: $button-bg-color-post-hover;
+    border-color: $button-border-color-post-hover;
+    color: $button-text-color-post-hover;
+  }
+
+  &--post:focus {
+    background-color: $button-bg-color-post-hover;
+    border-color: $button-border-color-post-hover;
+    color: $button-text-color-post-hover;
+  }
+
+  &--post:active {
+    background-color: $button-bg-color-post-active;
+    border-color: $button-border-color-post-active;
+    color: $button-text-color-post-active;
+  }
+
+  &--cancel {
+    background-color: $button-bg-color-cancel;
+    border-color: $button-border-color-cancel;
+    color: $button-text-color-cancel;
+  }
+
+  &--cancel:hover {
+    background-color: $button-bg-color-cancel-hover;
+    border-color: $button-border-color-cancel-hover;
+    color: $button-text-color-cancel-hover;
+  }
+
+  &--cancel:focus {
+    background-color: $button-bg-color-cancel-hover;
+    border-color: $button-border-color-cancel-hover;
+    color: $button-text-color-cancel-hover;
+  }
+
+  &--cancel:active {
+    background-color: $button-bg-color-cancel-active;
+    border-color: $button-border-color-cancel-active;
+    color: $button-text-color-cancel-active;
+  }
+}

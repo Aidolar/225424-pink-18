@@ -1,0 +1,92 @@
+@import "variables.scss";
+@import "blocks/app-features.scss";
+@import "blocks/burger-button.scss";
+@import "blocks/button.scss";
+@import "blocks/contacts.scss";
+@import "blocks/copyright.scss";
+@import "blocks/download.scss";
+@import "blocks/editing-slider.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/field-radio.scss";
+@import "blocks/field-text.scss";
+@import "blocks/field-textarea.scss";
+@import "blocks/form-block.scss";
+@import "blocks/glasses-logo.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/opening.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/photo-block.scss";
+@import "blocks/photo-of-the-day.scss";
+@import "blocks/pop-up.scss";
+@import "blocks/post-photo.scss";
+@import "blocks/reviews.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/tariff-table.scss";
+@import "blocks/tariffs-info.scss";
+@import "blocks/toggle-button.scss";
+@import "blocks/user-photos.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensans.woff") format("woff"), url("fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensansbold.woff") format("woff"), url("fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/opensanslight.woff") format("woff"), url("fonts/opensanslight.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  color: rgb(40, 54, 69);
+  background-color: $bg-body-color;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

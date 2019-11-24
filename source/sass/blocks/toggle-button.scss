@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+.toggle-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 3px solid $slider-button-border-color-current;
+  border-radius: 50%;
+
+  &:not(.toggle-button--current) {
+    border-color: $slider-button-border-color;
+  }
+
+  &:hover:not(.toggle-button--current) {
+    border-color: $slider-button-border-color-hover;
+  }
+
+  &:focus:not(.toggle-button--current) {
+    border-color: $slider-button-border-color-hover;
+  }
+
+  &:active:not(.toggle-button--current) {
+    border-color: $slider-button-border-color-active;
+  }
+
+  &--current {
+    box-shadow: 0 0 0 3px $slider-button-shadow-color-current;
+  }
+}

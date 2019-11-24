@@ -1,0 +1,64 @@
+/* Фоновые цвета блоков */
+$bg-body-color: rgb(255, 255, 255);
+$bg-header-color: rgb(40, 54, 69);
+$bg-opening-color: rgb(44, 57, 73);
+$bg-download-color-mobile: rgb(29, 38, 49);
+$bg-photo-block-color: rgb(242, 242, 242);
+$bg-photo-of-the-day-color: rgb(210, 40, 86);
+
+/* Цвета ссылок в меню навигации */
+$link-color: rgb(255, 255, 255);
+$link-color-hover: rgb(210, 40, 86);
+$link-color-down: rgba(210, 40, 86, 0.3);
+
+/* Цвета обычного текста */
+$white-text: rgb(255, 255, 255);
+$navy-text: rgb(40, 54, 69);
+$black-text: rgb(0, 0, 0);
+$pink-text: rgb(210, 40, 86);
+
+/* Цвета больших кнопок */
+$button-bg-color-download: transparent;
+$button-bg-color-download-hover: rgb(255, 255, 255);
+$button-bg-color-download-active: rgb(255, 255, 255);
+$button-bg-color-post: transparent;
+$button-bg-color-post-hover: rgb(210, 40, 86);
+$button-bg-color-post-active: rgb(210, 40, 86);
+$button-bg-color-cancel: transparent;
+$button-bg-color-cancel-hover: rgba(255, 255, 255, 0.3);
+$button-bg-color-cancel-active: rgba(40, 54, 69, 0.3);
+
+$button-border-color-download: rgb(255, 255, 255);
+$button-border-color-download-hover: rgb(255, 255, 255);
+$button-border-color-download-active: rgb(255, 255, 255);
+$button-border-color-post: rgb(210, 40, 86);
+$button-border-color-post-hover: rgb(210, 40, 86);
+$button-border-color-post-active: rgb(210, 40, 86);
+$button-border-color-cancel: rgba(40, 54, 69, 0.1);
+$button-border-color-cancel-hover: rgba(40, 54, 69, 0.2);
+$button-border-color-cancel-active: transparent;
+
+$button-text-color-download: rgb(255, 255, 255);
+$button-text-color-download-hover: rgb(210, 40, 86);
+$button-text-color-download-active: rgba(210, 40, 86, 0.3);
+$button-text-color-post: rgb(210, 40, 86);
+$button-text-color-post-hover: rgb(255, 255, 255);
+$button-text-color-post-active: rgba(255, 255, 255, 0.3);
+$button-text-color-cancel: rgba(40, 54, 69, 0.1);
+$button-text-color-cancel-hover: rgba(40, 54, 69, 0.3);
+$button-text-color-cancel-active: rgba(255, 255, 255, 0.3);
+
+/* Цвета круглых кнопок слайдеров */
+$slider-button-border-color: rgba(40, 54, 69, 0.3);
+$slider-button-border-color-hover: rgba(40, 54, 69, 0.6);
+$slider-button-border-color-active: rgba(40, 54, 69, 0.1);
+$slider-button-border-color-current: rgb(255, 255, 255);
+
+$slider-button-shadow-color-current: rgb(40, 54, 69);
+
+/* Цвета социальных кнопок */
+
+$social-button-bg-color: rgb(255, 255, 255);
+$social-button-border-color: rgba(40, 54, 69, 0.1);
+$social-button-border-color-hover: rgb(40, 54, 69);
+$social-button-border-color-active: rgba(40, 54, 69, 0.1);

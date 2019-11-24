@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+.download {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  width: 100%;
+
+  background-color: $bg-download-color-mobile;
+}
+
+.download__app-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  list-style: none;
+}
+
+.download__app-item {
+  margin: 0;
+  padding: 0;
+}
+
+.download__app-link {
+  display: flex;
+  width: 50px;
+  height: 60px;
+  align-items: center;
+}
+
+.download__available {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 37px;
+  color: $white-text;
+
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 24px;
+  text-align: center;
+}

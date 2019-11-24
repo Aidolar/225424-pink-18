@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.user-photos {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user-photos__text {
+  padding-top: 27px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 59px;
+  color: $navy-text;
+
+  font-size: 14px;
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.user-photos__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-photos__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-photos__photo-of-the-day {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
