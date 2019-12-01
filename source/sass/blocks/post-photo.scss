@@ -1,0 +1,101 @@
+.post-photo__text-block {
+  margin: 0;
+  padding: 0;
+
+  background-color: $white-color;
+}
+
+.post-photo__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 52px;
+
+  color: $navy-color;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.post-photo__editing-block {
+  margin: 0;
+  padding: 0;
+
+  background-color: $gray-color;
+}
+
+.post-photo__mode-toggles {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.post-photo__toggle {
+  margin: 0;
+  padding: 0;
+  margin-left: 34px;
+
+  flex-basis: 48px;
+
+  border: none;
+  background-color: transparent;
+
+  svg {
+    fill: rgba($navy-color, 0.3);
+  }
+
+  &--contrast path {
+    fill: rgba($navy-color, 0.3);
+  }
+
+  &:not(.post-photo__toggle--active):hover,
+  &:not(.post-photo__toggle--active):focus {
+    svg {
+      fill: rgba($navy-color, 0.5);
+    }
+  }
+
+  &--contrast:not(.post-photo__toggle--active):hover,
+  &--contrast:not(.post-photo__toggle--active):focus {
+    path {
+      fill: rgba($navy-color, 0.5);
+    }
+  }
+
+  &--active svg {
+    fill: $pink-color;
+  }
+}
+
+.post-photo__slider {
+  padding-top: 40px;
+
+  &:last-child {
+    padding-bottom: 34px;
+  }
+}
+
+.post-photo__buttons-block {
+  margin: 0;
+  padding: 0;
+
+  background-color: $gray-color;
+
+  border-top: 1px solid rgba($navy-color, 0.1);
+}
+
+.post-photo__buttons-wrapper {
+  margin: 0;
+  padding: 0;
+
+  padding-top: 38px;
+  padding-bottom: 40px;
+}
+
+.post-photo__button {
+  margin-top: 12px;
+}

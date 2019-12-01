@@ -1,0 +1,38 @@
+.rectangular-button {
+  display: block;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  width: 280px;
+
+  background-color: #2aab6d;
+
+  border: none;
+  border-radius: 2px;
+
+  color: $white-color;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba($white-color, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

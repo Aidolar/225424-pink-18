@@ -8,6 +8,5 @@
       var map = new google.maps.Map(
       document.getElementById('pink-map'), {zoom: 17, center: pink});
 // The marker, positioned at Pink
-      var marker = new google.maps.Marker({position: pink, map: map, icon: 'pin.png'});
+      var marker = new google.maps.Marker({position: pink, map: map, icon: 'img/icon-map-marker.svg'});
 }
-// pin.png потом будет в другой папке, и не png, а svg :-) Не забыть подстроить под ширину вьюпорта

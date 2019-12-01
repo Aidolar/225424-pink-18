@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 .button {
   display: block;
   box-sizing: border-box;
@@ -20,74 +18,59 @@
   text-align: center;
 
   &--download {
-    background-color: $button-bg-color-download;
-    border-color: $button-border-color-download;
-    color: $button-text-color-download;
+    background-color: transparent;
+    border-color: $white-color;
+    color: $white-color;
   }
 
-  &--download:hover {
-    background-color: $button-bg-color-download-hover;
-    border-color: $button-border-color-download-hover;
-    color: $button-text-color-download-hover;
-  }
-
+  &--download:hover,
   &--download:focus {
-    background-color: $button-bg-color-download-hover;
-    border-color: $button-border-color-download-hover;
-    color: $button-text-color-download-hover;
+    background-color: $white-color;
+    border-color: $white-color;
+    color: $pink-color;
   }
 
   &--download:active {
-    background-color: $button-bg-color-download-active;
-    border-color: $button-border-color-download-active;
-    color: $button-text-color-download-active;
+    background-color: $white-color;
+    border-color: $white-color;
+    color: rgba($pink-color, 0.3);
   }
 
   &--post {
-    background-color: $button-bg-color-post;
-    border-color: $button-border-color-post;
-    color: $button-text-color-post;
+    background-color: transparent;
+    border-color: $pink-color;
+    color: $pink-color;
   }
 
-  &--post:hover {
-    background-color: $button-bg-color-post-hover;
-    border-color: $button-border-color-post-hover;
-    color: $button-text-color-post-hover;
-  }
-
+  &--post:hover,
   &--post:focus {
-    background-color: $button-bg-color-post-hover;
-    border-color: $button-border-color-post-hover;
-    color: $button-text-color-post-hover;
+    background-color: $pink-color;
+    border-color: $pink-color;
+    color: $white-color;
   }
 
   &--post:active {
-    background-color: $button-bg-color-post-active;
-    border-color: $button-border-color-post-active;
-    color: $button-text-color-post-active;
+    background-color: $pink-color;
+    border-color: $pink-color;
+    color: rgba($white-color, 0.3);
   }
 
   &--cancel {
-    background-color: $button-bg-color-cancel;
-    border-color: $button-border-color-cancel;
-    color: $button-text-color-cancel;
+    background-color: transparent;
+    border-color: rgba($navy-color, 0.1);
+    color: rgba($navy-color, 0.1);
   }
 
-  &--cancel:hover {
-    background-color: $button-bg-color-cancel-hover;
-    border-color: $button-border-color-cancel-hover;
-    color: $button-text-color-cancel-hover;
-  }
-
+  &--cancel:hover,
   &--cancel:focus {
-    background-color: $button-bg-color-cancel-hover;
-    border-color: $button-border-color-cancel-hover;
-    color: $button-text-color-cancel-hover;
+    background-color: rgba($white-color, 0.3);
+    border-color: rgba($navy-color, 0.2);
+    color: rgba($navy-color, 0.3);
   }
 
   &--cancel:active {
-    background-color: $button-bg-color-cancel-active;
-    border-color: $button-border-color-cancel-active;
-    color: $button-text-color-cancel-active;
+    background-color: rgba($navy-color, 0.3);
+    border-color: transparent;
+    color: rgba($white-color, 0.3);
   }
 }

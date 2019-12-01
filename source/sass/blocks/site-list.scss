@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 .site-list {
   margin: 0;
   padding: 0;
@@ -23,40 +21,34 @@
 
 .site-list__item a {
 
-  color: $link-color;
+  color: $white-color;
 
   font-size: 18px;
   font-weight: bold;
   line-height: 13px;
   text-transform: uppercase;
 
-  &:link {
-    color: $link-color;
-  }
-
+  &:link,
   &:visited {
-    color: $link-color;
+    color: $white-color;
   }
 
   &:hover {
-    color: $link-color-hover;
+    color: $pink-color;
   }
 
-  &:focus {
-    color: $link-color-down;
-  }
-
+  &:focus,
   &:active {
-    color: $link-color-down;
+    color: rgba($pink-color, 0.3);
   }
 }
 
 .site-list__item--active a {
-  :link {
-    color: $link-color;
+  &:link {
+    color: $white-color;
   }
 
-  :visited {
-    color: $link-color;
+  &:visited {
+    color: $white-color;
   }
 }

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  max-width: 659px;
+
+  color: rgb(40, 54, 69);
+  background-color: $white-color;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
