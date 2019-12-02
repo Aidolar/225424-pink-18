@@ -1,0 +1,76 @@
+.app-features {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.app-features__question {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+
+  color: $navy-color;
+
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 29px;
+
+  text-align: center;
+}
+
+.app-features__offer {
+  padding-top: 16px;
+
+  color: $navy-color;
+
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 29px;
+
+  text-align: center;
+}
+
+.app-features__features-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 277px;
+  list-style: none;
+}
+
+.app-features__features-item {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-features__feature {
+  color: $navy-color;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+
+  text-align: center;
+}
+
+.app-features__feature-description {
+  color: $navy-color;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+}
+
+.app-features__phone-image {
+  position: absolute;
+  left: 160px - 78;
+  bottom: 0%;
+  align-items: center;
+}

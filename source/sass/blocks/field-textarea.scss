@@ -1,0 +1,32 @@
+.field-textarea {
+  margin: 0;
+  padding: 0;
+}
+
+.field-textarea__textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 26px 20px;
+
+  background-color: $white-color;
+
+  color: $navy-color;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  border: none;
+  outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
+
+  &:hover {
+    outline: 2px solid $navy-color;
+  }
+
+  &:focus {
+    outline: 2px solid $pink-color;
+  }
+}

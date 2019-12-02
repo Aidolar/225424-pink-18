@@ -1,0 +1,69 @@
+.contacts__appeal {
+  padding-top: 37px;
+
+  color: $navy-color;
+
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 29px;
+
+  text-align: center;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.contacts__bold-text {
+
+  color: $navy-color;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.contacts a {
+
+  color: $pink-color;
+
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+
+
+  &:link {
+    color: $pink-color;
+  }
+
+  &:visited {
+    color: $pink-color;
+  }
+
+  &:hover {
+    color: $navy-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: rgba($navy-color, 0.3);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba($navy-color, 0.3);
+    text-decoration: none;
+  }
+}
+
+.contacts__info {
+
+  color: $pink-color;
+
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+}

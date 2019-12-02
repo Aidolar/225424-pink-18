@@ -1,0 +1,35 @@
+.editing-slider {
+  margin: 0;
+  padding: 0;
+}
+
+.editing-slider__scale {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  width: 240px;
+  height: 2px;
+  background-color: $navy-color;
+}
+
+.editing-slider__pin {
+  position: absolute;
+  left: 193px;
+  top: -6px;
+  margin: 0;
+  padding: 0;
+
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+
+  background-color: $gray-color;
+
+  border: 2px solid $pink-color;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $pink-color;
+  }
+}

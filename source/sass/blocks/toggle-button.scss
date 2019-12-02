@@ -1,0 +1,27 @@
+.toggle-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 3px solid $white-color;
+  border-radius: 50%;
+
+  &:not(.toggle-button--current) {
+    border-color: rgba($navy-color, 0.3);
+  }
+
+  &:hover:not(.toggle-button--current),
+  &:focus:not(.toggle-button--current) {
+    border-color: rgba($navy-color, 0.6);
+  }
+
+  &:active:not(.toggle-button--current) {
+    border-color: rgba($navy-color, 0.1);
+  }
+
+  &--current {
+    box-shadow: 0 0 0 3px $navy-color;
+  }
+}

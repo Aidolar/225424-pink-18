@@ -1,0 +1,70 @@
+.photo-block {
+  margin: 0;
+  padding: 0;
+  flex-basis: 280px;
+
+  background-color: $gray-color;
+
+  &--photo-of-the-day {
+    position: relative;
+  }
+}
+
+.photo-block__user-photo {
+  width: 280px;
+  height: 180px;
+
+  &--photo-of-the-day {
+    width: 320px;
+    height: 137px;
+  }
+}
+
+.photo-block__comment-section {
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.photo-block__author-name {
+  margin: 0;
+  padding: 0;
+  color: $navy-color;
+
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.photo-block__publication-time {
+  color: $navy-color;
+
+  font-size: 12px;
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo-block__comment {
+  margin: 0;
+  padding: 0;
+
+  color: $navy-color;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-block__like-count {
+  color: $pink-color;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

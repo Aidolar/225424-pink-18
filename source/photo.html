@@ -3,18 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк - взгляните на жизнь иначе!</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <header class="page-header"> <!-- будет position: absolute к верху страницы и иметь полупрозрачный фон -->
-
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Pink"> <!-- заменить на svg -->
-      </a>
-
       <nav class="main-nav">
-        <button class="burger-button" type="button">Открыть или закрыть меню</button>
+
+        <div class="container">
+          <a class="page-header__logo logo" href="index.html">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <g>
+                <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+              </g>
+            </svg>
+          </a>
+          <button class="burger-button" type="button">Открыть или закрыть меню</button>
+        </div>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -29,136 +40,196 @@
             <a href="https://htmlacademy.ru/">Html academy</a>
           </li>
         </ul>
-      </nav>
 
+      </nav>
     </header>
 
     <main>
 
       <section class="opening">
 
-        <h1 class="opening__header">Фотографии пользователей</h1>
+        <div class="container">
+          <h1 class="opening__header">Фотографии пользователей</h1>
+        </div>
 
       </section>
 
       <section class="user-photos">
 
-        <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
+        <div class="container">
+          <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
 
-        <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-        <div class="user-photos__gallery">
+          <ul class="user-photos__list">
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <span class="photo-of-the-day">Панорама дня</span>
-            <cite class="photo-block__author-name">Анна</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-10 11:55">(5 минут назад)</time>
-            <blockquote class="photo-block__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote> <!-- вспомнить как скрыть контент который вылезает за максимальную высоту блока -->
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 215</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block photo-block--photo-of-the-day">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo photo-block__user-photo--photo-of-the-day" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя"></a>
+              <span class="user-photos__photo-of-the-day photo-of-the-day">Панорама дня</span>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Анна</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-10 11:55">(5 минут назад)</time>
+                <blockquote class="photo-block__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote> <!-- вспомнить как скрыть контент который вылезает за максимальную высоту блока -->
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Левон</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-10 07:00">(5 часов назад)</time>
-            <blockquote class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 356</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Левон</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-10 07:00">(5 часов назад)</time>
+                <blockquote class="photo-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 356</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Антон</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-10 00:00">(12 часов назад)</time>
-            <blockquote class="photo-block__comment">Соседи будут рады!</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 666</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Антон</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-10 00:00">(12 часов назад)</time>
+                <blockquote class="photo-block__comment">Соседи будут рады!</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 666</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Борис</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-09 16:00">(20 часов назад)</time>
-            <blockquote class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 215</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Борис</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-09 16:00">(20 часов назад)</time>
+                <blockquote class="photo-block__comment">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 215</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Сергей</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-09 11:00">(25 часов назад)</time>
-            <blockquote class="photo-block__comment">Самая кубанская в мире!</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 4</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Сергей</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-09 11:00">(25 часов назад)</time>
+                <blockquote class="photo-block__comment">Самая кубанская в мире!</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 4</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Максим</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-08 20:00">(40 часов назад)</time>
-            <blockquote class="photo-block__comment">Где снег-то?</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 150</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Максим</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-08 20:00">(40 часов назад)</time>
+                <blockquote class="photo-block__comment">Где снег-то?</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 150</p>
+                </div>
+              </div>
+            </li>
 
-          <div class="photo-block">
-            <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография пользователя"></a>
-            <cite class="photo-block__author-name">Надежда</cite>
-            <time class="photo-block__publication-time" datetime="2019-11-08 15:00">(45 часов назад)</time>
-            <blockquote class="photo-block__comment">Всем GM и взаимные лайки!</blockquote>
-            <div class="photo-block__like-section">
-              <button class="photo-block__like-button" type="button">Поставить лайк</button>
-              <p class="photo-block__like-count">Нравится: 2560</p>
-            </div>
-          </div>
+            <li class="user-photos__item photo-block">
+              <a class="photo-block__full-photo-link" href="#"><img class="photo-block__user-photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя"></a>
+              <div class="photo-block__comment-section">
+                <cite class="photo-block__author-name">Надежда</cite>
+                <time class="photo-block__publication-time" datetime="2019-11-08 15:00">(45 часов назад)</time>
+                <blockquote class="photo-block__comment">Всем GM и взаимные лайки!</blockquote>
+                <div class="photo-block__like-section">
+                  <button class="photo-block__like-button" type="button">Поставить лайк</button>
+                  <p class="photo-block__like-count">Нравится: 2560</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+
       </section>
 
       <section class="post-photo">
+
         <h2 class="visually-hidden">Запостите свою фотографию!</h2>
-        <p class="post-photo__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне</p>
+
+        <div class="post-photo__text-block">
+
+          <div class="container">
+            <p class="post-photo__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+
+        </div>
+
+
         <div class="post-photo__editing-block">
-          <a class="post-photo__full-photo-link" href="#"><img class="post-photo__edited-photo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография для редактирования"></a>
-          <p class="post-photo__mode-toggles">
-            <button class="post-photo__toggle post-photo__toggle--crop" type="button">Обрезка фото</button>
-            <button class="post-photo__toggle post-photo__toggle--fill" type="button">Заливка</button>
-            <button class="post-photo__toggle post-photo__toggle--contrast" type="button">Контраст</button>
-          </p>
-          <div class="post-photo__slider editing-slider">
-            <div class="editing-slider__scale">
-              <div class="editing-slider__pin"></div>
+
+          <div class="container">
+            <a class="post-photo__full-photo-link" href="#"><img class="post-photo__edited-photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография для редактирования"></a>
+            <p class="post-photo__mode-toggles">
+              <button class="post-photo__toggle post-photo__toggle--crop post-photo__toggle--active" type="button">
+                <span class="visually-hidden">Обрезка фото</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </button>
+              <button class="post-photo__toggle post-photo__toggle--fill" type="button">
+                <span class="visually-hidden">Заливка</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </button>
+              <button class="post-photo__toggle post-photo__toggle--contrast" type="button">
+                <span class='visually-hidden'>Контраст</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </button>
+            </p>
+            <div class="post-photo__slider editing-slider">
+              <div class="editing-slider__scale">
+                <div class="editing-slider__pin"></div>
+              </div>
+            </div>
+            <div class="post-photo__slider post-photo__slider--hidden editing-slider">
+              <div class="editing-slider__scale">
+                <div class="editing-slider__pin"></div>
+              </div>
+            </div>
+            <div class="post-photo__slider post-photo__slider--hidden editing-slider">
+              <div class="editing-slider__scale">
+                <div class="editing-slider__pin"></div>
+              </div>
             </div>
           </div>
-          <div class="post-photo__slider post-photo__slider--hidden editing-slider">
-            <div class="editing-slider__scale">
-              <div class="editing-slider__pin"></div>
-            </div>
-          </div>
-          <div class="post-photo__slider post-photo__slider--hidden editing-slider">
-            <div class="editing-slider__scale">
-              <div class="editing-slider__pin"></div>
-            </div>
-          </div>
+
         </div>
+
         <div class="post-photo__buttons-block">
-          <button class="post-photo__button post-photo__button--post" type="button">Запостить</button>
-          <button class="post-photo__button post-photo__button--cancel" type="button">Отмена</button>
+
+          <div class="container">
+            <div class="post-photo__buttons-wrapper">
+              <button class="post-photo__button button button--post" type="button">Запостить</button>
+              <button class="post-photo__button button button--cancel" type="button">Отмена</button>
+            </div>
+          </div>
+
         </div>
+
       </section>
     </main>
 
@@ -183,7 +254,7 @@
 
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </footer>
   </body>
