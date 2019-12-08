@@ -6,7 +6,7 @@
 
   width: 100%;
 
-  background-color: $dark-navy-color;
+  background-color: transparent;
 }
 
 .download__app-list {
@@ -42,4 +42,26 @@
   font-weight: lighter;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .download__app-list {
+    padding-top: 46px;
+  }
+
+  .download__available {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__app-list {
+    padding-top: 66px;
+  }
+
+  .download__available {
+    font-size: 18px;
+    padding-top: 64px;
+  }
 }

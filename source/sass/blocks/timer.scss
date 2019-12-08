@@ -1,0 +1,48 @@
+.timer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border-radius: 50%;
+}
+
+.timer__length {
+  margin: 0;
+  padding: 0;
+
+  color: $pink-color;
+}
+
+@media (min-width: $tablet-width) {
+  .timer {
+    width: 202px;
+    height: 202px;
+
+    border: 14px solid $pink-color;
+  }
+
+  .timer__length {
+    font-size: 96px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .timer {
+    width: 253px;
+    height: 253px;
+
+    border: 17px solid $pink-color;
+  }
+
+  .timer__length {
+    font-size: 120px;
+    font-weight: bold;
+  }
+}

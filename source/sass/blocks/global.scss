@@ -1,8 +1,9 @@
 body {
+  position: relative;
+
   margin: 0;
   padding: 0;
   min-width: 320px;
-  max-width: 659px;
 
   color: rgb(40, 54, 69);
   background-color: $white-color;
