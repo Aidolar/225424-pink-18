@@ -1,0 +1,179 @@
+.effect {
+  display: none;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.effect__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.effect__timer-block {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.effect__research-block {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.effect__effect-length {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+}
+
+.effect__research {
+  margin: 0;
+  padding: 0;
+}
+
+/* В стайлгайде отсутствует информация о стилизации ссылки в данном блоке, поэтому сделал стилизацию похожей на стилизацию ссылок из блока с контктными данными */
+
+.effect__research-block a {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:link {
+    color: $pink-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $pink-color;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $navy-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: rgba($navy-color, 0.3);
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($navy-color, 0.3);
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    display: flex;
+  }
+
+  .effect__timer-block {
+    flex-basis: 50%;
+    padding-top: 115px;
+  }
+
+  .effect__research-block {
+    flex-basis: 50%;
+
+    padding-bottom: 34px;
+  }
+
+  .effect__effect-length {
+    padding-top: 90px;
+    padding-right: 140px; /* не получается сделать перенос как на макете. "Типограф" или <br> тут не помогут, ведь на десктопе переноса нет */
+
+    color: #000000;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+
+    text-align: left;
+  }
+
+  .effect__research {
+    padding-top: 10px;
+    padding-right: 15px; /* не получается сделать перенос как на макете */
+
+    color: $navy-color;
+
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+
+    text-align: left;
+  }
+
+  .effect__research-block a {
+    padding-top: 10px;
+
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $gray-color;
+  }
+
+  .effect__timer-block {
+    flex-basis: 370px;
+    padding-top: 70px;
+  }
+
+  .effect__research-block {
+    flex-basis: 510px;
+
+    padding-bottom: 122px;
+  }
+
+  .effect__effect-length {
+    padding-top: 90px;
+    padding-right: 0;
+
+    color: #000000;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+
+    text-align: left;
+  }
+
+  .effect__research {
+    padding-top: 20px;
+    padding-right: 40px; /* не получается сделать перенос как на макете */
+
+    color: $navy-color;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+
+    text-align: left;
+  }
+
+  .effect__research-block a {
+    padding-top: 30px;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+}
