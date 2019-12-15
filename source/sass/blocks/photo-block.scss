@@ -1,9 +1,6 @@
 .photo-block {
   margin: 0;
   padding: 0;
-  flex-basis: 280px;
-
-  background-color: $gray-color;
 
   &--photo-of-the-day {
     position: relative;
@@ -21,13 +18,17 @@
 }
 
 .photo-block__comment-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 11px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
   box-sizing: border-box;
+
+  background-color: $gray-color;
 }
 
 .photo-block__author-name {
@@ -61,10 +62,105 @@
   line-height: 24px;
 }
 
+.photo-block__like-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-top: 8px;
+}
+
 .photo-block__like-count {
+  margin: 0;
+  padding: 0;
+
   color: $pink-color;
 
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block__user-photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo-block__comment-section {
+    padding-left: 28px;
+    padding-right: 32px;
+    height: 155px;
+  }
+
+  .photo-block__comment {
+    margin-bottom: auto;
+  }
+
+  .photo-block__like-section {
+    justify-content: space-between;
+
+    padding-top: 0;
+    margin-top: auto;
+  }
+
+  .photo-block__like-button {
+    order: 1;
+  }
+
+  .photo-block--photo-of-the-day {
+    .photo-block__comment-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .photo-block__info {
+      flex-basis: 50%;
+
+      margin: 0;
+    }
+
+    .photo-block__comment {
+      order: 1;
+
+      margin: 0;
+    }
+
+    .photo-block__like-section {
+      flex-basis: 50%;
+      justify-content: flex-end;
+
+      margin: 0;
+    }
+
+    .photo-block__like-button {
+      margin-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block__user-photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-block__comment-section {
+    padding-left: 28px;
+    padding-right: 32px;
+    height: 155px;
+  }
+
+  .photo-block__comment {
+    margin-bottom: auto;
+  }
+
+  .photo-block__like-section {
+    padding-top: 0;
+    margin-top: auto;
+  }
 }

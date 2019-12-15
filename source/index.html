@@ -5,23 +5,16 @@
     <title>Пинк - взгляните на жизнь иначе!</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-      #pink-map {
-        width: 320px;
-        height: 220px;
-        margin: 0 auto;
-        }
-    </style> <!-- временно -->
   </head>
 
   <body>
 
-    <header class="page-header"> <!-- будет position: absolute к верху страницы и иметь полупрозрачный фон -->
+    <header class="page-header">
 
       <nav class="main-nav">
 
         <div class="container container--main-nav">
-          <div class="page-heder__logo-button-block">
+          <div class="page-header__logo-button-block">
             <a class="page-header__logo logo">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
@@ -166,7 +159,10 @@
           <div class="reviews__wrapper slider">
             <ul class="reviews__list slider__list">
               <li class="reviews__item slider__item">
-                <cite class="reviews__author-name">Николай Петров</cite>
+                <div class="reviews__author">
+                  <p class="reviews__author-name">Николай Петров</p>
+                  <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                </div>
                 <blockquote class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
               </li>
@@ -187,6 +183,7 @@
         <table class="tariff-table">
           <thead class="tariff-table__head">
             <tr class="tariff-table__row">
+              <th class="tariff-table__cell tariff-table__cell--head tariff-table__cell--empty"></th>
               <th class="tariff-table__cell tariff-table__cell--head">
                 <b class="tariff-table__tariff-name">База</b>
                 <p class="tariff-table__tariff-price">1,99 USD</p></th>
@@ -206,71 +203,98 @@
           <tbody class="tariff-table__body">
             <tr class="tariff-table__row">
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Розовый фильтр</p>
-                <span class="tariff-table__availability visually-hidden">Включен</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
+                <p class="tariff-table__options tariff-table__options--first-column">Розовый фильтр</p>
               </td>
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Розовый фильтр</p>
-                <span class="tariff-table__availability visually-hidden">Включен</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Розовый фильтр</p>
+                  <span class="tariff-table__availability visually-hidden">Включен</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
               </td>
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Розовый фильтр</p>
-                <span class="tariff-table__availability visually-hidden">Включен</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
-            </tr>
-            <tr class="tariff-table__row">
-              <td class="tariff-table__cell">
-                <p class="tariff-table__options">Смайлики</p>
-                <span class="tariff-table__availability visually-hidden">Не включены</span>
-                <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Розовый фильтр</p>
+                  <span class="tariff-table__availability visually-hidden">Включен</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
               </td>
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Смайлики</p>
-                <span class="tariff-table__availability visually-hidden">Включены</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
-              <td class="tariff-table__cell">
-                <p class="tariff-table__options">Смайлики</p>
-                <span class="tariff-table__availability visually-hidden">Включены</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Розовый фильтр</p>
+                  <span class="tariff-table__availability visually-hidden">Включен</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
               </td>
             </tr>
             <tr class="tariff-table__row">
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Комментарии</p>
-                <span class="tariff-table__availability visually-hidden">Не включены</span>
-                <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+                <p class="tariff-table__options tariff-table__options--first-column">Смайлики</p>
               </td>
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Комментарии</p>
-                <span class="tariff-table__availability visually-hidden">Не включены</span>
-                <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Смайлики</p>
+                  <span class="tariff-table__availability visually-hidden">Не включены</span>
+                  <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
+                </div>
               </td>
               <td class="tariff-table__cell">
-                <p class="tariff-table__options">Комментарии</p>
-                <span class="tariff-table__availability visually-hidden">Включены</span>
-                <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Смайлики</p>
+                  <span class="tariff-table__availability visually-hidden">Включены</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
+              </td>
+              <td class="tariff-table__cell">
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Смайлики</p>
+                  <span class="tariff-table__availability visually-hidden">Включены</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="tariff-table__row">
+              <td class="tariff-table__cell">
+                <p class="tariff-table__options tariff-table__options--first-column">Комментарии</p>
+              </td>
+              <td class="tariff-table__cell">
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Комментарии</p>
+                  <span class="tariff-table__availability visually-hidden">Не включены</span>
+                  <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
+                </div>
+              </td>
+              <td class="tariff-table__cell">
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Комментарии</p>
+                  <span class="tariff-table__availability visually-hidden">Не включены</span>
+                  <svg class="tariff-table__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  </svg>
+                </div>
+              </td>
+              <td class="tariff-table__cell">
+                <div class="tariff-table__cell-container">
+                  <p class="tariff-table__options">Комментарии</p>
+                  <span class="tariff-table__availability visually-hidden">Включены</span>
+                  <svg class="tariff-table__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  </svg>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -286,37 +310,67 @@
 
       </section>
 
-      <footer class="page-footer">
+      <section class="academy-contacts">
 
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="page-footer__contacts contacts">
+          <div class="academy-contacts__contacts contacts">
             <p class="contacts__appeal">Остались вопросы? Свяжитесь с нами!</p>
-            <p class="contacts__text">
-              <b class="contacts__bold-text">Звоните:</b>
-              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </p>
-            <p class="contacts__text">
-              <b class="contacts__bold-text">Пишите:</b>
-              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="contacts__text">
-              <b class="contacts__bold-text">Приезжайте в гости:</b>
-              <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
-            </p>
-          </div>
-
-        </div>
-
-        <div class="container container--no-padding">
-          <div id="pink-map">
-
+            <div class="contacts__wrapper">
+              <p class="contacts__text">
+                <b class="contacts__bold-text">Звоните:</b>
+                <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+              <p class="contacts__text">
+                <b class="contacts__bold-text">Пишите:</b>
+                <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+              <p class="contacts__text">
+                <b class="contacts__bold-text">Приезжайте в гости:</b>
+                <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+              </p>
+            </div>
           </div>
         </div>
 
-      </footer>
+        <div id="pink-map">
+
+        </div>
+
+      </section>
 
     </main>
+
+    <footer class="page-footer page-footer--index">
+      <div class="container">
+        <div class="page-footer__footer-wrapper">
+
+          <div class="page-footer__logo-wrapper">
+            <a class="page-footer__glasses-logo glasses-logo" href="index.html">
+              <img class="glasses-logo__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Pink"> <!-- заменить на svg -->
+            </a>
+          </div>
+
+            <ul class="page-footer__soc-list soc-list">
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+              </li>
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютюбе</a>
+              </li>
+            </ul>
+
+          <div class="page-footer__copyright copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
     <script src="js/map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsUm4Lg8iGYQjd6LPIGnshcbR437WFkHc&callback=initMap"></script>

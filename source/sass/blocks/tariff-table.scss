@@ -1,5 +1,5 @@
 .tariff-table {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-collapse: collapse;
   border-spacing: 0;
@@ -18,7 +18,9 @@
   min-width: 280px;
   box-sizing: border-box;
   padding-top: 25px;
+  padding-right: 17px;
   padding-bottom: 25px;
+  padding-left: 23px;
   border: 2px solid #e5e5e5;
 
   &--head {
@@ -26,9 +28,19 @@
     border-left: 2px solid #e5e5e5;
   }
 
-  /* &--head:nth-child(1) {
-    border-left: none;
-  } */
+  &--head:nth-child(2) {
+    border-left-color: $navy-color;
+  }
+}
+
+.tariff-table__row:first-child .tariff-table__cell {
+  border-top-color: $navy-color;
+}
+
+.tariff-table__cell-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tariff-table__tariff-name {
@@ -82,12 +94,94 @@
   text-transform: uppercase;
   text-align: center;
   transform: rotate(-45deg);
-  z-index: 5;
+  z-index: 10;
 }
 
 .tariff-table__hit-ribbon {
   position: absolute;
   display: block;
   top: 0;
-  left: -2px;
+  left: 0;
+}
+
+@media (max-width: $tablet-width - 1) {
+  .tariff-table__cell:first-child {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tariff-table__cell {
+    min-width: 155px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+
+    &--empty {
+      background-color: #f2f2f2;
+      border: none;
+    }
+  }
+
+  .tariff-table__row:first-child .tariff-table__cell:first-child {
+    border-top-color: #e5e5e5;
+  }
+
+  .tariff-table__cell-container {
+    justify-content: center;
+  }
+
+  .tariff-table__tariff-name {
+    font-size: 16px;
+  }
+
+  .tariff-table__tariff-price {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  .tariff-table__options {
+    &:not(.tariff-table__options--first-column) {
+      display: none;
+    }
+
+    &--first-column {
+      padding-left: 16px;
+
+      color: $navy-color;
+
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 30px;
+      text-transform: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff-table__cell {
+    min-width: 235px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+
+  .tariff-table__tariff-name {
+    font-size: 18px;
+  }
+
+  .tariff-table__tariff-price {
+    padding-top: 5px;
+    font-size: 24px;
+  }
+
+  .tariff-table__options {
+    &:not(.tariff-table__options--first-column) {
+      display: none;
+    }
+
+    &--first-column {
+      padding-left: 24px;
+
+      font-size: 18px;
+    }
+  }
 }
