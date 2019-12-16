@@ -1,0 +1,25 @@
+.academy-contacts {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#pink-map {
+  margin: 0 auto;
+  width: 100vw;
+  height: 220px;
+}
+
+@media (min-width: $tablet-width) {
+  #pink-map {
+    height: 428px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  #pink-map {
+    height: 522px;
+  }
+}

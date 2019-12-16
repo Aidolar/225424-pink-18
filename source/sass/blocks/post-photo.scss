@@ -8,7 +8,7 @@
 .post-photo__text {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 52px;
 
   color: $navy-color;
@@ -98,4 +98,24 @@
 
 .post-photo__button {
   margin-top: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__text {
+    padding-top: 37px;
+    padding-bottom: 78px;
+
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-photo__text {
+    padding-top: 61px;
+    padding-bottom: 75px;
+
+
+    font-size: 18px;
+  }
 }

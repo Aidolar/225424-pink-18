@@ -17,3 +17,20 @@
 .tariffs-info__toggle:not(:last-child) {
   margin-right: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .tariffs-info {
+    padding-bottom: 68px;
+  }
+
+  .tariffs-info__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs-info {
+    padding-top: 148px;
+    padding-bottom: 95px;
+  }
+}
