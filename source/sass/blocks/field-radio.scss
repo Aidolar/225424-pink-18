@@ -3,13 +3,55 @@
 
   margin: 0;
   padding: 0;
+  padding-left: 70px;
 
   cursor: pointer;
-}
 
-.field-radio__title {
   color: $navy-color;
 
   font-size: 18px;
   line-height: 30px;
+}
+
+.field-radio__custom-radio {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  margin-left: -70px;
+
+  background-color: $white-color;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  border-radius: 50%;
+}
+
+.field-radio__input:hover + .field-radio__custom-radio {
+  box-shadow: 0 0 0 2px $navy-color;
+}
+
+.field-radio__input:focus + .field-radio__custom-radio {
+  box-shadow: 0 0 0 2px $pink-color;
+}
+
+.field-radio__input:checked + .field-radio__custom-radio {
+  background-color: $pink-color;
+  box-shadow: 0 0 0 2px #e5e5e5, inset 0 0 0 10px $white-color;
+}
+
+.field-radio__input:checked:hover + .field-radio__custom-radio {
+  box-shadow: 0 0 0 2px $navy-color, inset 0 0 0 10px $white-color;
+}
+
+.field-radio__input:checked:focus + .field-radio__custom-radio {
+  box-shadow: 0 0 0 2px $pink-color, inset 0 0 0 10px $white-color;
+}
+
+@media (min-width: $tablet-width) {
+  .field-radio {
+    padding-left: 118px;
+  }
+
+  .field-radio__custom-radio {
+    margin-left: -60px;
+  }
 }

@@ -75,7 +75,9 @@
   }
 
   .opening__container {
-    padding-right: 340px;
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
   }
 
   .opening__download {
@@ -111,10 +113,11 @@
 
     font-size: 50px;
     line-height: 60px;
-  }
 
-  .opening__container {
-    padding-right: 650px;
+    &--form {
+      padding-right: 95px;
+      padding-left: 95px;
+    }
   }
 
   .opening__download {
