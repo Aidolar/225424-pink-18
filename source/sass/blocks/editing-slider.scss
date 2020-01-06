@@ -8,15 +8,14 @@
   margin: 0;
   padding: 0;
 
-  width: 240px;
+  width: 100%;
   height: 2px;
   background-color: $navy-color;
 }
 
 .editing-slider__pin {
   position: absolute;
-  left: 193px;
-  top: -6px;
+
   margin: 0;
   padding: 0;
 
@@ -31,5 +30,48 @@
 
   &:active {
     background-color: $pink-color;
+  }
+
+  &--mobile {
+    left: 193px;
+    top: -6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .editing-slider__pin {
+    &--crop {
+      left: 153px;
+      top: -6px;
+    }
+
+    &--fill {
+      left: 32px;
+      top: -6px;
+    }
+
+    &--contrast {
+      left: 103px;
+      top: -6px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editing-slider__pin {
+    &--crop {
+      left: 80px;
+      top: -6px;
+    }
+
+    &--fill {
+      left: 254px;
+      top: -6px;
+    }
+
+    &--contrast {
+      left: 167px;
+      top: -6px;
+    }
   }
 }

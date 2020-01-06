@@ -34,9 +34,16 @@
   margin-bottom: 20px;
 }
 
+.user-photos__nameplate-wrapper {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
 .user-photos__photo-of-the-day {
   position: absolute;
-  top: 0%;
+  bottom: -36px;
   right: 0%;
 }
 
@@ -58,6 +65,12 @@
 
   .user-photos__item {
     flex-basis: 300px;
+  }
+
+  .user-photos__photo-of-the-day {
+    position: absolute;
+    bottom: -91px;
+    right: 0%;
   }
 }
 

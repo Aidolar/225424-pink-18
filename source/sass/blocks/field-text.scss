@@ -1,4 +1,6 @@
 .field-text {
+  position: relative;
+
   margin: 0;
   padding: 0;
 }
@@ -15,12 +17,11 @@
 }
 
 .field-text__input {
-
   width: 100%;
   box-sizing: border-box;
 
   margin: 0;
-  padding: 27px 15px 23px 21px;
+  padding: 15px 90px 15px 21px;
 
   background-color: $white-color;
 
@@ -38,5 +39,39 @@
 
   &:focus {
     outline: 2px solid $pink-color;
+  }
+}
+
+.field-text__icon {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__input-container {
+    flex-basis: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .field-text__icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0;
+
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+
+    & svg {
+      fill: $pink-color;
+    }
   }
 }
