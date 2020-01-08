@@ -34,16 +34,28 @@
     border: 3px solid rgba($navy-color, 0.1);
     border-radius: 50%;
     background-color: $white-color;
+
+    path {
+      fill: $pink-color;
+    }
   }
 
   &:hover {
     background-color: $white-color;
     border-color: $navy-color;
+
+    path {
+      fill: $pink-color;
+    }
   }
 
   &:focus,
   &:active {
     background-color: $white-color;
     border-color: rgba($navy-color, 0.1);
+
+    path {
+      fill: rgba($pink-color, 0.3);
+    }
   }
 }

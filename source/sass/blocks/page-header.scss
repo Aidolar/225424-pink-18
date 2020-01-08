@@ -1,13 +1,6 @@
 .page-header {
   margin: 0;
   padding: 0;
-  background-color: $navy-color;
-}
-
-.page-header__logo-button-block {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
 }
 
 @media (min-width: $desktop-width) {

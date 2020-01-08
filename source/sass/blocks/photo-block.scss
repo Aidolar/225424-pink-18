@@ -81,6 +81,18 @@
   padding-top: 8px;
 }
 
+.photo-block__like-button {
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  svg {
+    fill: $pink-color;
+  }
+}
+
 .photo-block__like-count {
   margin: 0;
   padding: 0;

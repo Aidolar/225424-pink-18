@@ -1,3 +1,21 @@
+.burger-button {
+  background: transparent;
+  border: none;
+
+  & .burger-button__icon {
+    fill: $white-color;
+  }
+
+  &:hover .burger-button__icon,
+  &:focus .burger-button__icon {
+    fill: $pink-color;
+  }
+
+  &:active .burger-button__icon {
+    fill: rgba($pink-color, 0.3);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .burger-button {
     display: none;
