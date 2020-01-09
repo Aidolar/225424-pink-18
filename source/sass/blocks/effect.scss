@@ -39,7 +39,7 @@
   padding: 0;
 }
 
-/* В стайлгайде отсутствует информация о стилизации ссылки в данном блоке, поэтому сделал стилизацию похожей на стилизацию ссылок из блока с контктными данными */
+/* В стайлгайде отсутствует информация о стилизации ссылки в данном блоке, поэтому сделал стилизацию похожей на стилизацию ссылок из блока с контактными данными */
 
 .effect__research-block a {
   display: block;
@@ -79,21 +79,21 @@
 
   .effect__wrapper {
     display: flex;
+    align-items: flex-start;
+    padding-bottom: 110px;
   }
 
   .effect__timer-block {
     flex-basis: 50%;
-    padding-top: 115px;
+    padding-top: 59px;
   }
 
   .effect__research-block {
     flex-basis: 50%;
-
-    padding-bottom: 34px;
+    padding-top: 89px;
   }
 
   .effect__effect-length {
-    padding-top: 90px;
     padding-right: 140px; /* не получается сделать перенос как на макете. "Типограф" или <br> тут не помогут, ведь на десктопе переноса нет */
 
     color: #000000;
@@ -132,19 +132,21 @@
     background-color: $gray-color;
   }
 
+  .effect__wrapper {
+    padding-bottom: 67px;
+  }
+
   .effect__timer-block {
     flex-basis: 370px;
-    padding-top: 70px;
+    padding-top: 75px;
   }
 
   .effect__research-block {
     flex-basis: 510px;
-
-    padding-bottom: 122px;
+    padding-top: 165px;
   }
 
   .effect__effect-length {
-    padding-top: 90px;
     padding-right: 0;
 
     color: #000000;
