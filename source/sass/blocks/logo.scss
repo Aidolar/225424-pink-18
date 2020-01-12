@@ -1,10 +1,5 @@
 .logo {
-  & .logo__icon--tablet,
-  & .logo__icon--desktop {
-    display: none;
-  }
-
-  & svg {
+  svg {
     fill: $white-color;
   }
 
@@ -13,35 +8,32 @@
     fill: $pink-color;
   }
 
-  &:active path:not(.logo__star path) {
+  &:active path {
     fill: rgba($white-color, 0.3);
-  }
-
-  &:active .logo__star path {
-    fill: rgba($pink-color, 0.3);
   }
 }
 
-@media (min-width: $tablet-width) {
-  .logo {
-    & .logo__icon--mobile {
-      display: none;
-    }
+.logo__icon--tablet,
+.logo__icon--desktop {
+  display: none;
+}
 
-    & .logo__icon--tablet {
-      display: block;
-    }
+@media (min-width: $tablet-width) {
+  .logo__icon--mobile {
+    display: none;
+  }
+
+  .logo__icon--tablet {
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .logo {
-    & .logo__icon--tablet {
-      display: none;
-    }
+  .logo__icon--tablet {
+    display: none;
+  }
 
-    & .logo__icon--desktop {
-      display: block;
-    }
+  .logo__icon--desktop {
+    display: block;
   }
 }

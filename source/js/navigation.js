@@ -1,16 +1,12 @@
 'use strict'
 
+var html = document.querySelector('.no-js');
 var navMain = document.querySelector('.main-nav');
 var navButton = document.querySelector('.main-nav__burger-button');
 
-navMain.classList.remove('main-nav--nojs');
+html.classList.remove('no-js');
 
 navButton.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
+    navMain.classList.toggle('main-nav--opened');
+    navButton.classList.toggle('burger-button--opened');
 });

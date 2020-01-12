@@ -1,18 +1,80 @@
 .burger-button {
-  background: transparent;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  height: 24px;
+  width: 50px;
+
+  background-color: transparent;
   border: none;
 
-  & .burger-button__icon {
-    fill: $white-color;
+  cursor: pointer;
+}
+
+.burger-button span {
+  display: block;
+  position: absolute;
+  top: 10px;
+  background-color: $white-color;
+  transform: rotate(0deg);
+  transition: 0.3s ease all;
+  height: 4px;
+  width: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    background-color: $white-color;
+    display: block;
+    transform: rotate(0deg);
+    transition: 0.5s ease all;
+    height: 4px;
+    width: 50px;
   }
 
-  &:hover .burger-button__icon,
-  &:focus .burger-button__icon {
-    fill: $pink-color;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    background-color: $white-color;
+    display: block;
+    transform: rotate(0deg);
+    transition: 0.5s ease all;
+    height: 4px;
+    width: 50px;
+  }
+}
+
+.burger-button:hover span,
+.burger-button:hover span::before,
+.burger-button:hover span::after,
+.burger-button:focus span,
+.burger-button:focus span::before,
+.burger-button:focus span::after {
+  background-color: $pink-color;
+}
+
+.burger-button:focus span,
+.burger-button:focus span::before,
+.burger-button:focus span::after {
+  background-color: rgba($pink-color, 0.3);
+}
+
+.burger-button--opened span {
+  width: 0;
+
+  &::before {
+    width: 33px;
+    transform-origin: center center;
+    transform: translateX(21px) translateY(-10px) rotate(45deg);
   }
 
-  &:active .burger-button__icon {
-    fill: rgba($pink-color, 0.3);
+  &::after {
+    width: 33px;
+    transform-origin: center center;
+    transform: translateX(21px) translateY(10px) rotate(-45deg);
   }
 }
 

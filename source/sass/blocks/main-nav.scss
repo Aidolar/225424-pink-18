@@ -6,7 +6,7 @@
 
   margin: 0;
   padding: 0;
-  background-color: $navy-color;
+  background-color: rgba(#000000, 0.3);
 }
 
 .main-nav__logo-button-block {
@@ -23,7 +23,7 @@
   min-height: 67px;
   padding-bottom: 21px;
 
-  & a {
+  a {
     margin-bottom: -5px;
   }
 }
@@ -33,60 +33,77 @@
     min-height: 110px;
     padding-bottom: 42px;
 
-    & a {
+    a {
       margin-bottom: 0;
     }
   }
 }
 
 @media (max-width: $desktop-width - 1) {
-  .main-nav--closed {
+  .main-nav {
     position: absolute;
     top: 0;
     z-index: 10;
 
     width: 100%;
+  }
 
-    background-color: rgba(#000000, 0.3);
+  .main-nav__wrapper {
+    display: none;
+  }
 
-    & .main-nav__wrapper {
-      display: none;
-    }
+  .burger-button__icon--burger {
+    display: block;
+  }
 
-    & .burger-button__icon--burger {
-      display: block;
-    }
-
-    & .burger-button__icon--cross {
-      display: none;
-    }
+  .burger-button__icon--cross {
+    display: none;
   }
 
   .main-nav--opened {
-    position: absolute;
+    position: relative;
     top: 0;
+
+    margin-bottom: -67px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -110px;
+    }
+
     z-index: 10;
 
     width: 100%;
 
-    & .burger-button__icon--burger {
+    background-color: $navy-color;
+
+    .main-nav__wrapper {
+      display: block;
+    }
+
+    .burger-button__icon--burger {
       display: none;
     }
 
-    & .burger-button__icon--cross {
+    .burger-button__icon--cross {
       display: block;
     }
   }
 
-  .main-nav--nojs {
-    position: static;
+  .no-js .main-nav {
+    margin-bottom: -67px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -110px;
+    }
+
+    position: relative;
     background-color: $navy-color;
 
-    & .main-nav__wrapper {
+    .main-nav__wrapper {
       display: block;
     }
 
-    & .main-nav__burger-button {
+    .main-nav__burger-button {
       display: none;
     }
   }
