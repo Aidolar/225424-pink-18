@@ -1,0 +1,28 @@
+.glasses-logo {
+  &:hover path,
+  &:focus path {
+    fill: $pink-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:active .glasses-logo__words {
+    fill: $navy-color;
+  }
+}
+
+.glasses-logo__icon--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .glasses-logo__icon--mobile {
+    display: none;
+  }
+
+  .glasses-logo__icon--desktop {
+    display: block;
+  }
+}
