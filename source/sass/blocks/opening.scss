@@ -6,7 +6,7 @@
 
   box-sizing: border-box;
   width: 100%;
-  height: 237px;
+  min-height: 237px;
 
   background: $dark-navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
 
@@ -17,28 +17,38 @@
 }
 
 .opening--index {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
   width: 100%;
-  height: 733px;
+
 
   background-color: $dark-navy-color;
+}
+
+.opening__main-block {
+  padding-top: 100px;
+  min-height: 462px;
+  box-sizing: border-box;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 45% bottom, $dark-navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center top /cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px auto, cover;
+  }
 }
 
 .opening__wrapper {
   margin: 0;
   padding: 0;
-
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 45% 176px, $dark-navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: 258px auto, 320px auto;
-  }
 }
 
 .opening__slogan {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
   color: $white-color;
 
   font-size: 24px;
@@ -60,12 +70,12 @@
 }
 
 .opening__download {
-  padding-top: 315px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .opening {
-    height: 440px;
+    min-height: 440px;
 
     background: $dark-navy-color url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
 
@@ -77,22 +87,28 @@
 
   .opening--index {
     width: 100%;
-    height: 730px;
 
     background-color: $dark-navy-color;
   }
 
-  .opening__wrapper {
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 30% bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+  .opening__main-block {
+    padding-top: 220px;
+    min-height: 729px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 30% bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat center top /cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-size: 700px auto, 1200px auto;
+      background-size: 700px auto, cover;
     }
   }
 
+  .opening__wrapper {
+    background-color: transparent;
+  }
+
   .opening__slogan {
-    padding-top: 220px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     font-size: 40px;
     line-height: 48px;
@@ -106,19 +122,25 @@
   }
 
   .opening__container {
+    position: relative;
     margin: 0;
     padding: 0;
     max-width: 300px;
   }
 
   .opening__download {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
     padding-top: 40px;
+    padding-bottom: 115px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .opening {
-    height: 394px;
+    min-height: 394px;
 
     background: $dark-navy-color url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
 
@@ -130,22 +152,23 @@
 
   .opening--index {
     width: 100%;
-    height: 853px;
 
     background-color: $dark-navy-color;
   }
 
-  .opening__wrapper {
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 30% 208px, url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+  .opening__main-block {
+    padding-top: 240px;
+    min-height: 853px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 30% bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat center /cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1050px auto, 2560px auto;
+      background-size: 1050px auto, cover;
     }
   }
 
   .opening__slogan {
-    padding-top: 240px;
+    padding: 0;
 
     font-size: 50px;
     line-height: 61px;
@@ -167,5 +190,6 @@
 
   .opening__download {
     padding-top: 63px;
+    padding-bottom: 125px;
   }
 }

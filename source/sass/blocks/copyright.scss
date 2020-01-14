@@ -20,17 +20,17 @@
   height: 34px;
   box-sizing: border-box;
 
-  &:link path,
-  &:visited path {
+  &:link svg,
+  &:visited svg {
     fill: $pink-color;
   }
 
-  &:hover path {
+  &:hover svg {
     fill: $navy-color;
   }
 
-  &:focus path,
-  &:active path {
+  &:focus svg,
+  &:active svg {
     fill: rgba($navy-color, 0.3);
   }
 }
