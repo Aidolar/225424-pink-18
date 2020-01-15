@@ -48,6 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .field-text__input-container {
+    display: block;
     flex-basis: 100%;
 
     margin: 0;

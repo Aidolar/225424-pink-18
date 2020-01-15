@@ -8,11 +8,11 @@
   width: 100%;
   min-height: 237px;
 
-  background: $dark-navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  background: $dark-navy-color url("../img/bg-back-mobile@1x.jpg") no-repeat center top /cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: cover;
   }
 }
 
@@ -44,6 +44,8 @@
 .opening__wrapper {
   margin: 0;
   padding: 0;
+
+  background-color: $dark-navy-color;
 }
 
 .opening__slogan {
@@ -81,7 +83,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
+      background-size: cover;
     }
   }
 
@@ -146,7 +148,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
+      background-size: cover;
     }
   }
 
