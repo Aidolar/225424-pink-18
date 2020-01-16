@@ -159,21 +159,40 @@
   }
 
   .opening__main-block {
-    padding-top: 240px;
-    min-height: 853px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 30% bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat center /cover;
+    padding-top: 218px; /* убрать паддинги на всех разрешениях экрана и слоган отодвигать по вертикали паддингом самого слогана */
+    min-height: 853px; /* убрать на всех разрешениях экрана */
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 100% bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat center /cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       background-size: 1050px auto, cover;
     }
+
+    /* здесь убрать руку с телефоном из фона */
   }
+
+  /*
+
+  .opening__mobile-hand-container {
+    margin: 0;
+    padding: 0;
+    min-height: 853px; /* вместо min-height у .opening__main-block на всех разрешениях экрана
+
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 15% bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
+  }
+
+  */
 
   .opening__slogan {
     padding: 0;
 
     font-size: 50px;
-    line-height: 61px;
+    line-height: 60px;
   }
 
   .opening__header {
@@ -192,6 +211,6 @@
 
   .opening__download {
     padding-top: 63px;
-    padding-bottom: 125px;
+    padding-bottom: 122px;
   }
 }

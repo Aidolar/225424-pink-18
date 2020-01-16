@@ -116,6 +116,10 @@
     line-height: 24px;
 
     text-align: left;
+
+    br {
+      display: none;
+    }
   }
 
   .effect__research-block a {
@@ -138,12 +142,12 @@
 
   .effect__timer-block {
     flex-basis: 370px;
-    padding-top: 75px;
+    padding-top: 65px;
   }
 
   .effect__research-block {
     flex-basis: 510px;
-    padding-top: 165px;
+    padding-top: 160px;
   }
 
   .effect__effect-length {
@@ -159,8 +163,8 @@
   }
 
   .effect__research {
-    padding-top: 20px;
-    padding-right: 40px; /* не получается сделать перенос как на макете */
+    padding-top: 23px;
+    padding-right: 5px;
 
     color: $navy-color;
 
@@ -169,6 +173,10 @@
     line-height: 30px;
 
     text-align: left;
+
+    br {
+      display: block;
+    }
   }
 
   .effect__research-block a {

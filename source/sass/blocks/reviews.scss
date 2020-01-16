@@ -126,20 +126,22 @@
   .reviews__wrapper {
     display: flex;
 
-    padding-top: 200px;
+    padding-top: 185px;
 
-    background: url("../img/icon-quotes.svg") no-repeat 420px 70px;
+    background: url("../img/icon-quotes.svg") no-repeat 435px 70px;
   }
 
   .reviews__author {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
 
   .reviews__author-name {
+    padding-top: 35px;
     font-size: 24px;
   }
 
   .reviews__author-info {
+    padding-top: 3px;
     font-size: 18px;
   }
 
@@ -150,6 +152,7 @@
   .reviews__arrows {
     display: block;
     position: relative;
+    box-sizing: border-box;
 
     flex-basis: 60px;
 
@@ -158,13 +161,13 @@
     }
 
     &--right {
-      text-align: right;
+      padding-left: 37px;
     }
   }
 
   .reviews__arrow-button {
     position: absolute;
-    top: 30px;
+    top: 28px;
   }
 
   .reviews__slide-and-toggle {

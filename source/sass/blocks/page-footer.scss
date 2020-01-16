@@ -30,8 +30,11 @@
   }
 
   .page-footer__logo-wrapper {
+    align-self: flex-start;
+
     margin: 0;
     padding: 0;
+    margin-top: 35px;
 
     flex-basis: 150px;
   }
@@ -40,5 +43,9 @@
 @media (min-width: $desktop-width) {
   .page-footer__footer-wrapper {
     min-height: 197px;
+  }
+
+  .page-footer__logo-wrapper {
+    margin-top: 70px;
   }
 }

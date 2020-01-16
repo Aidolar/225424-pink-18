@@ -115,16 +115,20 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-bottom: 25px;
+    padding-bottom: 0;
   }
 
   .contacts__appeal {
-    padding-top: 57px;
+    padding-top: 62px;
     padding-right: 230px;
     padding-left: 230px;
 
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .contacts__bold-text {
+    padding-top: 44px;
   }
 
   .contacts__text {
@@ -133,5 +137,10 @@
     &:nth-child(2) {
       order: 3;
     }
+  }
+
+  .contacts a,
+  .contacts__info {
+    padding-top: 10px;
   }
 }
