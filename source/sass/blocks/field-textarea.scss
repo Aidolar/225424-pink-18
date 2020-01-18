@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   margin: 0;
-  padding: 26px 20px;
+  padding: 16px 20px;
 
   background-color: $white-color;
 
@@ -34,6 +34,12 @@
 
 @media (min-width: $tablet-width) {
   .field-textarea__textarea {
-    height: 190px;
+    height: 192px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-textarea__textarea {
+    height: 128px;
   }
 }

@@ -41,17 +41,17 @@
 @media (min-width: $tablet-width) {
   .editing-slider__pin {
     &--crop {
-      left: 153px;
+      left: 147px;
       top: -6px;
     }
 
     &--fill {
-      left: 32px;
+      left: 25px;
       top: -6px;
     }
 
     &--contrast {
-      left: 103px;
+      left: 96px;
       top: -6px;
     }
   }
@@ -60,17 +60,17 @@
 @media (min-width: $desktop-width) {
   .editing-slider__pin {
     &--crop {
-      left: 80px;
+      left: 71px;
       top: -6px;
     }
 
     &--fill {
-      left: 254px;
+      left: 247px;
       top: -6px;
     }
 
     &--contrast {
-      left: 167px;
+      left: 161px;
       top: -6px;
     }
   }
