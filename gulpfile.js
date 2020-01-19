@@ -104,5 +104,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "images", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "images", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));

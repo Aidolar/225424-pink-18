@@ -211,6 +211,7 @@
 
   .post-photo__photo-block {
     flex-basis: 300px;
+    max-width: 300px;
   }
 
   .post-photo__full-photo-link {
@@ -220,6 +221,7 @@
 
   .post-photo__edit-and-post {
     flex-basis: 300px;
+    max-width: 300px;
 
     display: flex;
     flex-direction: column;
@@ -270,14 +272,17 @@
 
     &--crop svg {
       width: 23px;
+      height: 23px;
     }
 
     &--fill svg {
       width: 23px;
+      height: 23px;
     }
 
     &--contrast svg {
       width: 16px;
+      height: 16px;
     }
   }
 
@@ -337,6 +342,7 @@
 
   .post-photo__photo-block {
     flex-basis: 390px;
+    max-width: 390px;
   }
 
   .post-photo__full-photo-link {
@@ -346,6 +352,7 @@
 
   .post-photo__edit-and-post {
     flex-basis: 410px;
+    max-width: 410px;
     padding-left: 0;
   }
 
@@ -354,16 +361,23 @@
 
     margin-left: -2px;
 
+    &--contrast {
+      margin-left: 5px;
+    }
+
     &--crop svg {
       width: 48px;
+      height: 48px;
     }
 
     &--fill svg {
       width: 48px;
+      height: 48px;
     }
 
     &--contrast svg {
       width: 32px;
+      height: 48px;
     }
   }
 
@@ -384,7 +398,10 @@
   }
 
   .post-photo__button {
+    padding-bottom: 14px;
+
     width: 183px;
+    font-size: 18px;
 
     &:last-child {
       margin-top: 0;

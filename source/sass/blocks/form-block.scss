@@ -417,6 +417,7 @@
 
   .form-block__full-name {
     flex-basis: 50%;
+    max-width: 50%;
     align-self: end;
 
     padding-right: 35px;
@@ -486,6 +487,7 @@
 
   .form-block__contacts-item {
     flex-basis: 50%;
+    max-width: 50%;
     box-sizing: border-box;
 
     padding-bottom: 12px;
@@ -505,6 +507,7 @@
 
   .form-block__os-names {
     flex-basis: 50%;
+    max-width: 50%;
 
     padding-top: 0;
     padding-left: 35px;
@@ -526,7 +529,7 @@
 
   .form-block__textarea-wrapper {
     padding-top: 28px;
-    padding-bottom: 36px;
+    padding-bottom: 40px;
   }
 
   .form-block__footer {

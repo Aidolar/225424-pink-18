@@ -21,7 +21,7 @@
 .user-photos__list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 
   margin: 0;
   padding: 0;
@@ -59,7 +59,6 @@
   }
 
   .user-photos__list {
-    flex-direction: row;
     justify-content: space-between;
   }
 
