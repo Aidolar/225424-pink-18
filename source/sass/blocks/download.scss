@@ -13,8 +13,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
-  padding-top: 32px;
+  padding: 36px 17px 0;
   list-style: none;
 }
 
@@ -28,6 +27,11 @@
   width: 50px;
   height: 60px;
   align-items: center;
+
+  &--appstore svg {
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
 }
 
 .download__available {
@@ -35,7 +39,6 @@
   margin: 0;
   padding: 0;
   padding-top: 16px;
-  padding-bottom: 37px;
   color: $white-color;
 
   font-size: 14px;
@@ -46,12 +49,17 @@
 
 @media (min-width: $tablet-width) {
   .download__app-list {
-    padding-top: 46px;
+    padding: 46px 30px 0;
   }
 
   .download__available {
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 35px;
+  }
+
+  .download__app-link--appstore svg {
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -62,6 +70,6 @@
 
   .download__available {
     font-size: 18px;
-    padding-top: 64px;
+    padding-top: 50px;
   }
 }

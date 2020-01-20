@@ -123,4 +123,13 @@
 
     background-color: transparent;
   }
+
+  .main-nav__logo-button-block {
+    padding: 0;
+    align-items: flex-start;
+
+    a {
+      margin-top: 27px;
+    }
+  }
 }

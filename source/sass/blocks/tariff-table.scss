@@ -21,15 +21,19 @@
   position: relative;
   min-width: 280px;
   box-sizing: border-box;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-right: 17px;
-  padding-bottom: 25px;
+  padding-bottom: 13px;
   padding-left: 23px;
   border: 2px solid #e5e5e5;
 
   &--head {
     border: none;
     border-left: 2px solid #e5e5e5;
+
+    padding-top: 17px;
+    padding-bottom: 19px;
+    padding-right: 22px;
   }
 
   &--head:nth-child(2) {
@@ -60,6 +64,7 @@
 .tariff-table__tariff-price {
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   color: $white-color;
 
   font-size: 24px;
@@ -89,8 +94,8 @@
 
 .tariff-table__hit {
   position: absolute;
-  left: 10px;
-  top: -5px;
+  left: 8px;
+  top: 0;
   color: $white-color;
 
   font-size: 14px;
@@ -117,12 +122,23 @@
 @media (min-width: $tablet-width) {
   .tariff-table__cell {
     min-width: 155px;
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-top: 8px;
+    padding-right: 23px;
+    padding-bottom: 7px;
+
+    &--head {
+
+      padding-top: 12px;
+      padding-bottom: 5px;
+    }
 
     &--empty {
       background-color: #f2f2f2;
       border: none;
+    }
+
+    &:first-child {
+      padding-left: 15px;
     }
   }
 
@@ -139,7 +155,7 @@
   }
 
   .tariff-table__tariff-price {
-    padding-top: 5px;
+    padding-top: 0;
     font-size: 18px;
   }
 
@@ -168,8 +184,17 @@
 @media (min-width: $desktop-width) {
   .tariff-table__cell {
     min-width: 235px;
-    padding-top: 22px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--head {
+      padding-top: 16px;
+      padding-bottom: 18px;
+    }
+
+    &:first-child {
+      padding-left: 21px;
+    }
   }
 
   .tariff-table__tariff-name {
@@ -177,7 +202,7 @@
   }
 
   .tariff-table__tariff-price {
-    padding-top: 5px;
+    padding: 0;
     font-size: 24px;
   }
 
@@ -187,14 +212,16 @@
     }
 
     &--first-column {
-      padding-left: 24px;
-
       font-size: 18px;
     }
   }
 
   .tariff-table__hit {
     left: 10px;
-    top: -5px;
+    top: -2px;
+  }
+
+  .tariff-table__icon-yes {
+    margin-top: 7px;
   }
 }

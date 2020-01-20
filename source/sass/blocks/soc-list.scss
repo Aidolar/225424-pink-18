@@ -35,7 +35,7 @@
     border-radius: 50%;
     background-color: $white-color;
 
-    path {
+    svg {
       fill: $pink-color;
     }
   }
@@ -44,7 +44,7 @@
     background-color: $white-color;
     border-color: $navy-color;
 
-    path {
+    svg {
       fill: $pink-color;
     }
   }
@@ -54,7 +54,7 @@
     background-color: $white-color;
     border-color: rgba($navy-color, 0.1);
 
-    path {
+    svg {
       fill: rgba($pink-color, 0.3);
     }
   }

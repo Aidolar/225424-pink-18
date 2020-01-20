@@ -22,6 +22,14 @@
 
   background-color: $white-color;
   box-shadow: 0 0 0 2px #e5e5e5;
+
+  svg {
+    margin-left: 7px;
+    margin-top: 9px;
+
+    display: none;
+    fill: $pink-color;
+  }
 }
 
 .field-checkbox__input:hover + .field-checkbox__custom-checkbox {
@@ -33,7 +41,11 @@
 }
 
 .field-checkbox__input:checked + .field-checkbox__custom-checkbox {
-  background: $white-color url("../img/icon-yes.svg") no-repeat 50%;
+  background-color: $white-color;
+
+  svg {
+    display: block;
+  }
 }
 
 .field-checkbox__input:checked:hover + .field-checkbox__custom-checkbox {
@@ -60,6 +72,6 @@
   }
 
   .field-checkbox__custom-checkbox {
-    margin-left: -60px;
+    margin-left: -58px;
   }
 }

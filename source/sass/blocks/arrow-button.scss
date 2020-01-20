@@ -7,14 +7,16 @@
 
   cursor: pointer;
 
-  fill: rgba($navy-color, 0.3);
+  svg {
+    fill: rgba($navy-color, 0.3);
+  }
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: rgba($navy-color, 0.6);
   }
 
-  &:active {
+  &:active svg {
     fill: rgba($navy-color, 0.1);
   }
 }

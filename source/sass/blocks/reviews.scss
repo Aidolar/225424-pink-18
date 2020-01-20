@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
 
-  padding-top: 34px;
+  padding-top: 42px;
 }
 
 .reviews__slide-and-toggle {
@@ -61,7 +61,7 @@
 .reviews__review-text {
   margin: 0;
   padding: 0;
-  padding-top: 11px;
+  padding-top: 13px;
   color: $navy-color;
 
   font-size: 14px;
@@ -73,7 +73,7 @@
 .reviews__toggles {
   margin: 0;
   padding: 0;
-  padding-top: 46px;
+  padding-top: 36px;
   padding-bottom: 45px;
   display: flex;
   justify-content: center;
@@ -101,11 +101,13 @@
 
   .reviews__author-name {
     font-size: 20px;
-    padding-top: 54px;
+    padding-top: 34px;
   }
 
   .reviews__author-info {
     display: block;
+
+    padding-top: 2px;
 
     color: $navy-color;
 
@@ -120,26 +122,32 @@
     font-size: 18px;
     padding-top: 0;
   }
+
+  .reviews__toggles {
+    padding-bottom: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
     display: flex;
 
-    padding-top: 200px;
+    padding-top: 185px;
 
-    background: url("../img/icon-quotes.svg") no-repeat 420px 70px;
+    background: url("../img/icon-quotes.svg") no-repeat 435px 70px;
   }
 
   .reviews__author {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
 
   .reviews__author-name {
+    padding-top: 35px;
     font-size: 24px;
   }
 
   .reviews__author-info {
+    padding-top: 3px;
     font-size: 18px;
   }
 
@@ -150,6 +158,7 @@
   .reviews__arrows {
     display: block;
     position: relative;
+    box-sizing: border-box;
 
     flex-basis: 60px;
 
@@ -158,13 +167,13 @@
     }
 
     &--right {
-      text-align: right;
+      padding-left: 37px;
     }
   }
 
   .reviews__arrow-button {
     position: absolute;
-    top: 30px;
+    top: 28px;
   }
 
   .reviews__slide-and-toggle {

@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
 
-  padding-bottom: 45px;
+  padding-bottom: 37px;
 }
 
 .contacts__appeal {
   margin: 0;
   padding: 0;
-  padding-top: 37px;
+  padding-top: 40px;
 
   color: $navy-color;
 
@@ -26,6 +26,7 @@
 
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
 
 .contacts__text {
@@ -40,22 +41,21 @@
 }
 
 .contacts__bold-text {
-  padding-top: 35px;
+  padding-top: 25px;
 
   color: $navy-color;
 
   font-size: 18px;
   font-weight: bold;
-  line-height: 48px;
 }
 
 .contacts a {
+  padding-top: 5px;
+
   color: $pink-color;
 
   font-size: 24px;
   font-weight: lighter;
-  line-height: 30px;
-
 
   &:link {
     color: $pink-color;
@@ -92,11 +92,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-bottom: 35px;
+    padding-bottom: 27px;
+
+    a {
+      padding-top: 10px;
+    }
   }
 
   .contacts__appeal {
-    padding-top: 37px;
+    padding-top: 46px;
     padding-right: 125px;
     padding-left: 125px;
 
@@ -104,22 +108,53 @@
     line-height: 48px;
   }
 
+  .contacts__wrapper {
+    padding-top: 0;
+  }
+
   .contacts__text {
-    flex-basis: 310px;
+    flex-basis: 300px;
+    max-width: 300px;
 
     padding-right: 30px;
     padding-left: 30px;
     box-sizing: border-box;
+
+    &:nth-child(1) {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    &:nth-child(2) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &:nth-child(1) a {
+      padding-top: 5px;
+    }
+  }
+
+  .contacts__bold-text {
+    padding-top: 44px;
+  }
+
+  .contacts__info {
+    padding-top: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-bottom: 25px;
+    padding-bottom: 0;
+
+    a {
+      padding-top: 28px;
+    }
   }
 
   .contacts__appeal {
-    padding-top: 57px;
+    padding-top: 62px;
     padding-right: 230px;
     padding-left: 230px;
 
@@ -127,11 +162,34 @@
     line-height: 60px;
   }
 
+  .contacts__bold-text {
+    padding-top: 56px;
+  }
+
   .contacts__text {
-    flex-basis: 33%;
+    flex-basis: 30%;
+    padding-right: 0;
+    padding-left: 0;
+
+    &:nth-child(1) {
+      margin: 0;
+    }
+
+    &:nth-child(1) a {
+      padding-top: 28px;
+    }
 
     &:nth-child(2) {
+      margin: 0;
       order: 3;
     }
+
+    &:nth-child(3) {
+      margin: 0 37px;
+    }
+  }
+
+  .contacts__info {
+    padding-top: 23px;
   }
 }

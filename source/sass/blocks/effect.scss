@@ -80,7 +80,7 @@
   .effect__wrapper {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 110px;
+    padding-bottom: 70px;
   }
 
   .effect__timer-block {
@@ -90,7 +90,15 @@
 
   .effect__research-block {
     flex-basis: 50%;
-    padding-top: 89px;
+    padding-top: 96px;
+
+    a {
+      padding-top: 10px;
+
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 24px;
+    }
   }
 
   .effect__effect-length {
@@ -116,14 +124,10 @@
     line-height: 24px;
 
     text-align: left;
-  }
 
-  .effect__research-block a {
-    padding-top: 10px;
-
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 24px;
+    br {
+      display: none;
+    }
   }
 }
 
@@ -138,12 +142,16 @@
 
   .effect__timer-block {
     flex-basis: 370px;
-    padding-top: 75px;
+    padding-top: 56px;
   }
 
   .effect__research-block {
     flex-basis: 510px;
-    padding-top: 165px;
+    padding-top: 151px;
+
+    br {
+      display: none;
+    }
   }
 
   .effect__effect-length {
@@ -159,8 +167,8 @@
   }
 
   .effect__research {
-    padding-top: 20px;
-    padding-right: 40px; /* не получается сделать перенос как на макете */
+    padding-top: 23px;
+    padding-right: 5px;
 
     color: $navy-color;
 
@@ -169,6 +177,10 @@
     line-height: 30px;
 
     text-align: left;
+
+    br {
+      display: block;
+    }
   }
 
   .effect__research-block a {

@@ -18,7 +18,7 @@
 .app-features__features-wrapper {
   margin: 0;
   padding: 0;
-  padding-top: 90px;
+  padding-top: 75px;
 
   background: $gray-color url("../img/bg-triangle-white.svg") no-repeat center top;
   background-size: 100% auto;
@@ -27,7 +27,7 @@
 .app-features__question {
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 
   color: $navy-color;
 
@@ -41,7 +41,7 @@
 .app-features__offer {
   margin: 0;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 28px;
 
   color: $navy-color;
 
@@ -58,7 +58,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-bottom: 325px;
+  padding-bottom: 287px;
   list-style: none;
 
   &::before {
@@ -68,7 +68,7 @@
     bottom: 0;
     width: 280px;
     height: 320px;
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 38px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 43px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -80,7 +80,7 @@
 .app-features__features-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 
   box-sizing: border-box;
 }
@@ -103,7 +103,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  padding-top: 8px;
+  padding-top: 12px;
   padding-right: 10px;
   padding-left: 10px;
 
@@ -124,15 +124,15 @@
 
 @media (min-width: $tablet-width) {
   .app-features__advert {
-    padding-bottom: 55px;
+    padding-bottom: 48px;
   }
 
   .app-features__features-wrapper {
-    padding-top: 80px;
+    padding-top: 75px;
   }
 
   .app-features__question {
-    padding-top: 68px;
+    padding-top: 50px;
 
     font-size: 40px;
     line-height: 47px;
@@ -146,7 +146,7 @@
   }
 
   .app-features__features-list {
-    padding-bottom: 0;
+    padding-bottom: 8px;
     padding-left: 300px;
 
     &::before {
@@ -166,7 +166,7 @@
   }
 
   .app-features__features-item {
-    padding-bottom: 36px;
+    padding-bottom: 35px;
   }
 
   .app-features__feature {
@@ -184,33 +184,36 @@
 
 @media (min-width: $desktop-width) {
   .app-features__advert {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 
   .app-features__features-wrapper {
-    padding-top: 0;
+    padding-top: 312px;
   }
 
   .app-features__question {
-    padding-top: 90px;
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
 
     font-size: 50px;
-    line-height: 47px;
+    line-height: auto;
   }
 
   .app-features__offer {
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
 
     font-size: 50px;
-    line-height: 47px;
+    line-height: 60px;
   }
 
   .app-features__features-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    margin-top: 302px;
     padding-left: 0;
 
     &::before {
@@ -226,7 +229,7 @@
     &:nth-child(1)::before {
       content: "";
       position: absolute;
-      top: -302px;
+      top: -317px;
       width: 300px;
       height: 302px;
       background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center bottom;
@@ -240,7 +243,7 @@
     &:nth-child(2)::before {
       content: "";
       position: absolute;
-      top: -302px;
+      top: -317px;
       width: 300px;
       height: 302px;
       background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center bottom;
@@ -254,22 +257,22 @@
     &:nth-child(3)::before {
       content: "";
       position: absolute;
-      top: -302px;
+      top: -317px;
       width: 300px;
       height: 302px;
-      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center bottom;
+      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center bottom;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
         background-size: 292px auto;
       }
     }
   }
 
   .app-features__feature {
-    padding-top: 50px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: 41px;
+    padding-left: 32px;
+    padding-right: 32px;
 
     font-size: 30px;
     line-height: 30px;
@@ -278,7 +281,7 @@
   }
 
   .app-features__feature-description {
-    padding-top: 40px;
+    padding-top: 25px;
     padding-left: 35px;
     padding-right: 35px;
 

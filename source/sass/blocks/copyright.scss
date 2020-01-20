@@ -5,7 +5,7 @@
   flex-basis: 150px;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .copyright a {
@@ -14,30 +14,31 @@
   align-items: center;
 
   margin: 0;
+  margin-left: 18px;
   padding: 0;
 
   width: 27px;
   height: 34px;
   box-sizing: border-box;
 
-  &:link path,
-  &:visited path {
+  &:link svg,
+  &:visited svg {
     fill: $pink-color;
   }
 
-  &:hover path {
+  &:hover svg {
     fill: $navy-color;
   }
 
-  &:focus path,
-  &:active path {
+  &:focus svg,
+  &:active svg {
     fill: rgba($navy-color, 0.3);
   }
 }
 
 .copyright__text {
   margin-top: 6px;
-  margin-right: 10px;
+  margin-left: 10px;
   box-sizing: border-box;
   color: $navy-color;
 
@@ -46,11 +47,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  justify-content: flex-end;
+  .copyright {
+    justify-content: space-between;
+
+    a {
+      margin-left: 0;
+    }
+  }
+
+  .copyright__text {
+    margin-top: 9px;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .copyright__text {
+    margin-top: 7px;
+    margin-left: -3px;
     font-size: 18px;
   }
 }
