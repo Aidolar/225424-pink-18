@@ -129,8 +129,9 @@
     min-height: 155px;
   }
 
-  .photo-block__comment {
-    margin-bottom: auto;
+  .photo-block__comment:not(.photo-block__comment--photo-of-the-day) {
+    min-height: 48px;
+    margin-bottom: 13px;
   }
 
   .photo-block__like-section {
@@ -201,10 +202,6 @@
   .photo-block__comment-section {
     padding-left: 28px;
     padding-right: 32px;
-  }
-
-  .photo-block__comment {
-    margin-bottom: auto;
   }
 
   .photo-block__like-section {
