@@ -17,6 +17,8 @@
   line-height: 18px;
   text-align: center;
 
+  word-break: break-all;
+
   &--download {
     background-color: transparent;
     border-color: $white-color;

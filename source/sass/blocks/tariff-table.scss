@@ -34,6 +34,8 @@
     padding-top: 17px;
     padding-bottom: 19px;
     padding-right: 22px;
+
+    overflow: hidden;
   }
 
   &--head:nth-child(2) {
@@ -96,7 +98,16 @@
   position: absolute;
   left: 8px;
   top: 0;
+  width: 73px;
+  height: 73px;
+}
+
+.tariff-table__hit-ribbon {
+  display: block;
+  margin-left: -38px;
+
   color: $white-color;
+  background-color: $pink-color;
 
   font-size: 14px;
   line-height: 30px;
@@ -104,13 +115,9 @@
   text-align: center;
   transform: rotate(-45deg);
   z-index: 10;
-}
-
-.tariff-table__hit-ribbon {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
+  width: 105px;
+  height: 29px;
+  overflow: hidden;
 }
 
 @media (max-width: $tablet-width - 1) {
