@@ -244,6 +244,7 @@
     &:nth-child(2)::before {
       content: "";
       position: absolute;
+      padding-left: 3px;
       top: 0;
       width: 300px;
       height: 302px;
@@ -258,6 +259,7 @@
     &:nth-child(3)::before {
       content: "";
       position: absolute;
+      padding-left: 3px;
       top: 0;
       width: 300px;
       height: 302px;
